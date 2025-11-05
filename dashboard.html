@@ -91,19 +91,6 @@
 
         <!-- Stats Overview -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-blue-200/50 hover:shadow-xl transition-all duration-300">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-700">Available Tools</h3>
-                        <p class="text-3xl font-bold text-blue-600">6</p>
-                        <p class="text-sm text-gray-500 mt-1">2 Active • 4 In Development</p>
-                    </div>
-                    <div class="bg-blue-100 p-3 rounded-full">
-                        <i class="fas fa-tools text-blue-600 text-2xl"></i>
-                    </div>
-                </div>
-            </div>
-            
             <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-green-200/50 hover:shadow-xl transition-all duration-300">
                 <div class="flex items-center justify-between">
                     <div>
@@ -116,16 +103,29 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-blue-200/50 hover:shadow-xl transition-all duration-300">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-700">Available Tools</h3>
+                        <p class="text-3xl font-bold text-blue-600">6</p>
+                        <p class="text-sm text-gray-500 mt-1">2 Active • 4 In Development</p>
+                    </div>
+                    <div class="bg-blue-100 p-3 rounded-full">
+                        <i class="fas fa-tools text-blue-600 text-2xl"></i>
+                    </div>
+                </div>
+            </div>
+
             <div class="bg-white/70 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-purple-200/50 hover:shadow-xl transition-all duration-300">
                 <div class="flex items-center justify-between">
                     <div>
-                        <h3 class="text-lg font-semibold text-gray-700">Integration</h3>
+                        <h3 class="text-lg font-semibold text-gray-700">AI-Empowerment</h3>
                         <p class="text-3xl font-bold text-purple-600">100%</p>
-                        <p class="text-sm text-gray-500 mt-1">Seamless Workflow</p>
+                        <p class="text-sm text-gray-500 mt-1">Enhance Productivity • Data Driven Insight</p>
                     </div>
                     <div class="bg-purple-100 p-3 rounded-full">
-                        <i class="fas fa-network-wired text-purple-600 text-2xl"></i>
+                        <i class="fas fa-robot text-purple-600 text-2xl"></i>
                     </div>
                 </div>
             </div>
@@ -232,18 +232,18 @@
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Personal Professional Coach -->
-                <div class="tool-card bg-white rounded-xl shadow-lg border border-gray-200/50 opacity-75">
+                <!-- Professional AI Personal Coach -->
+                <div class="tool-card group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200/50 hover:border-green-300/50">
                     <div class="p-6">
                         <div class="flex items-start justify-between mb-4">
                             <div class="bg-green-100 p-3 rounded-lg">
                                 <i class="fas fa-user-tie text-green-600 text-2xl"></i>
                             </div>
-                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-                                <i class="fas fa-hammer text-orange-500 text-xs mr-1"></i>Developing
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                <i class="fas fa-circle text-green-500 text-xs mr-1"></i>Active
                             </span>
                         </div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Personal Professional Coach</h4>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-green-600 transition-colors">Professional AI Personal Coach</h4>
                         <p class="text-gray-600 text-sm mb-4">
                             AI-powered coaching platform for personalized career development and skill enhancement.
                         </p>
@@ -252,9 +252,10 @@
                                 <i class="fas fa-brain"></i>
                                 <span>AI-powered</span>
                             </div>
-                            <button class="bg-gray-300 text-gray-500 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
-                                <i class="fas fa-lock mr-1"></i>
-                                Coming Soon
+                            <button onclick="openTool('https://coaching-acf.netlify.app/')"
+                                class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                Launch
                             </button>
                         </div>
                     </div>
@@ -375,6 +376,114 @@
                     </div>
                     <h4 class="text-lg font-medium text-gray-500 mb-2">More Tools Coming</h4>
                     <p class="text-gray-400 text-sm">Employee Surveys, Team Building Activities, Recognition Platform...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal & Compliance -->
+        <section class="mb-12">
+            <div class="flex items-center mb-6">
+                <div class="bg-gradient-to-r from-red-500 to-orange-500 p-3 rounded-lg mr-4">
+                    <i class="fas fa-balance-scale text-white text-xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900">Legal & Compliance</h3>
+                    <p class="text-gray-600">Ensure regulatory compliance and manage legal requirements effectively</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Employment Ordinance -->
+                <div class="tool-card bg-white rounded-xl shadow-lg border border-gray-200/50 opacity-75">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="bg-red-100 p-3 rounded-lg">
+                                <i class="fas fa-file-contract text-red-600 text-2xl"></i>
+                            </div>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                <i class="fas fa-hammer text-orange-500 text-xs mr-1"></i>Developing
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Employment Ordinance</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Comprehensive guide to employment laws, regulations, and compliance requirements.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Employment law</span>
+                            </div>
+                            <button class="bg-gray-300 text-gray-500 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
+                                <i class="fas fa-lock mr-1"></i>
+                                Coming Soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Personal Data (Privacy) Ordinance -->
+                <div class="tool-card bg-white rounded-xl shadow-lg border border-gray-200/50 opacity-75">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="bg-red-100 p-3 rounded-lg">
+                                <i class="fas fa-shield-alt text-red-600 text-2xl"></i>
+                            </div>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                <i class="fas fa-hammer text-orange-500 text-xs mr-1"></i>Developing
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Personal Data (Privacy) Ordinance</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Ensure data privacy compliance and protect employee information according to regulations.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                <i class="fas fa-user-shield"></i>
+                                <span>Data protection</span>
+                            </div>
+                            <button class="bg-gray-300 text-gray-500 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
+                                <i class="fas fa-lock mr-1"></i>
+                                Coming Soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Anti-Discrimination Ordinances -->
+                <div class="tool-card bg-white rounded-xl shadow-lg border border-gray-200/50 opacity-75">
+                    <div class="p-6">
+                        <div class="flex items-start justify-between mb-4">
+                            <div class="bg-red-100 p-3 rounded-lg">
+                                <i class="fas fa-hand-holding-heart text-red-600 text-2xl"></i>
+                            </div>
+                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                <i class="fas fa-hammer text-orange-500 text-xs mr-1"></i>Developing
+                            </span>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Anti-Discrimination Ordinances</h4>
+                        <p class="text-gray-600 text-sm mb-4">
+                            Guidelines and tools to prevent discrimination and promote workplace equality.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center space-x-2 text-xs text-gray-500">
+                                <i class="fas fa-equals"></i>
+                                <span>Equality focus</span>
+                            </div>
+                            <button class="bg-gray-300 text-gray-500 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
+                                <i class="fas fa-lock mr-1"></i>
+                                Coming Soon
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Placeholder for future tools -->
+                <div class="tool-card bg-gray-50 border-2 border-dashed border-gray-300 rounded-xl p-6 text-center hover:border-red-300 transition-all duration-300">
+                    <div class="bg-gray-200 p-3 rounded-lg mx-auto w-fit mb-4">
+                        <i class="fas fa-plus text-gray-400 text-2xl"></i>
+                    </div>
+                    <h4 class="text-lg font-medium text-gray-500 mb-2">More Tools Coming</h4>
+                    <p class="text-gray-400 text-sm">Contract Management, Policy Templates, Compliance Checklists...</p>
                 </div>
             </div>
         </section>
