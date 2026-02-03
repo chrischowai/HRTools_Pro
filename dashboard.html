@@ -109,7 +109,7 @@
                     <div>
                         <h3 class="text-lg font-semibold text-gray-700">Available Tools</h3>
                         <p class="text-3xl font-bold text-blue-600">10</p>
-                        <p class="text-sm text-gray-500 mt-1">3 Active • 7 In Development</p>
+                        <p class="text-sm text-gray-500 mt-1">4 Active • 6 In Development</p>
                     </div>
                     <div class="bg-blue-100 p-3 rounded-full">
                         <i class="fas fa-tools text-blue-600 text-2xl"></i>
@@ -342,17 +342,17 @@
                 </div>
 
                 <!-- Calories and Fitness Advisor -->
-                <div class="tool-card bg-white rounded-xl shadow-lg border border-gray-200/50 opacity-75">
+                <div class="tool-card group bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-200/50 hover:border-purple-300/50">
                     <div class="p-6">
                         <div class="flex items-start justify-between mb-4">
                             <div class="bg-purple-100 p-3 rounded-lg">
                                 <i class="fas fa-dumbbell text-purple-600 text-2xl"></i>
                             </div>
-                            <span class="bg-orange-100 text-orange-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
-                                <i class="fas fa-hammer text-orange-500 text-xs mr-1"></i>Developing
+                            <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded-full">
+                                <i class="fas fa-circle text-green-500 text-xs mr-1"></i>Active
                             </span>
                         </div>
-                        <h4 class="text-lg font-semibold text-gray-900 mb-2">Wellness Pro - EE Wellness</h4>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2 group-hover:text-purple-600 transition-colors">Wellness Pro - EE Wellness</h4>
                         <p class="text-gray-600 text-sm mb-4">
                             Promote employee health with personalized fitness and nutrition recommendations.
                         </p>
@@ -361,9 +361,10 @@
                                 <i class="fas fa-heartbeat"></i>
                                 <span>Health focused</span>
                             </div>
-                            <button class="bg-gray-300 text-gray-500 px-4 py-2 rounded-lg text-sm font-medium cursor-not-allowed">
-                                <i class="fas fa-lock mr-1"></i>
-                                Coming Soon
+                            <button onclick="openTool('https://smart-meal-snap.lovable.app')"
+                                class="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 transform hover:scale-105">
+                                <i class="fas fa-external-link-alt mr-1"></i>
+                                Launch
                             </button>
                         </div>
                     </div>
